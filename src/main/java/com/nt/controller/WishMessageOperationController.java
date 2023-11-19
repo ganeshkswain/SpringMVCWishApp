@@ -21,6 +21,7 @@ public class WishMessageOperationController {
 		System.out.println("shared memory object class name::" + map.getClass());
 		// use service
 		String msg = service.getWishMessage();
+		System.out.println("Wish Message is: "+msg);
 		// keep Data in model attributes'
 		map.put("wMsg", msg);
 		map.put("sysDate", new Date());
